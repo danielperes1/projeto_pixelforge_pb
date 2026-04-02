@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* * RESET */ 
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #f4f6fb;
+    color: black;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.topo{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) ;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    min-height: 85px;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 7px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 14;
+}
+
+.menu a{
+    color: white;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* MAIN */
+
+.info{
+    gap: 35px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.painel-destaques{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.item-destaques{
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.item-destaques h3{
+    font-size: 3em;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+.item-destaques{
+    font-size: #4b5536;
+    font-weight: 700;
+}
+
+/* ESTILIZAÇÃO TABELA JOGOS */
+
+.tabela-jogos{
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabela-jogos thead th{
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 16px;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 15px;
+
+
+}
+
+.tabela-jogos td{
+    padding: 14px 16px;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+    text-align: center;
+
+
+
+}
+
+/* PAGINA PORTFOLIO */
+
+/* DISPLAY FLEX */
+
+.lista-jogos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-jogos{
+   flex: 1 1 260px;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 0 10px 25px lightgrey; 
+}
+
+.card-jogos img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.card-jogos h3{
+    padding: 20px 20px 10px;
+    font-size: 1.3em;
+    color: #111827;
+}
+
+.card-jogos p{
+    padding: 0 20px 10px;
+    color: #6b7280;
+}
+
+/* PAGINA CONTATO */
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+.campo-assunto{
+    padding: 12px;
+    background-color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 50%;
+   
+}
+
+.form-contato h3{
+    text-align: center;
+}
+
+#caixamaior{
+    padding: 50px;
+}
+
+.botao-enviar{
+    background-color: lightgreen;
+    color: white;
+    padding: 20px 100px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: center;
+    width: 55%;
+    margin-top: 15px;
+}
+
+/* RODAPE */
+
+.rodape{
+    margin-top: auto;
+    background-color: #0f172a;
+    color: white;
+    padding: 45px 0;
+    text-align: center;
+    width: 100%;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
